@@ -981,10 +981,6 @@ a {
 
 .form-element:focus-within textarea {
     outline: 1px solid var(--btn-color);
-}
-
-.form-element:hover textarea {
-    outline: 1px solid var(--btn-color);
     border-radius: 4px;
 }
 
@@ -996,7 +992,10 @@ a {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+}
 
+.accept-a {
+    color: var(--btn-color);
 }
 
 .box-icon {
@@ -1012,7 +1011,7 @@ a {
 }
 
 .accept input:checked + label .box-icon {
-    background: #2196f3;
-    outline: #2196f3;
+    background: var(--btn-color);
+    outline: var(--btn-color);
     border-radius: 2px;
 }
