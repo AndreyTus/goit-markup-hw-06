@@ -286,7 +286,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <button type="button" class="close-button" data-modal-close>
@@ -327,21 +327,18 @@
                     <textarea class="placeholder-items" name="comment" id="comment" cols="30" rows="10"
                         placeholder="Введіть текст"></textarea>
                 </div>
-
-            </form>
-            <div class="accept">
-                <input type="checkbox" id="accept" name="accept" required>
-                <div>
-                    <span class="box-icon">
-                        <svg class="icon-vector" height="12" width="12">
+                <div class="accept">
+                    <input type="checkbox" id="accept" name="accept" required>
+                    <label for="accept"><div class="box-icon">
+                        <svg class="icon-vector" height="8" width="11">
                             <use href="./images/sprite-close.svg#icon-vector"></use>
                         </svg>
-                    </span>
-                    <label for="accept">Погоджуюся з розсилкою та приймаю <span><a href="#">Умови
+                    </div>Погоджуюся з розсилкою та приймаю<span><a href="#">Умови
                                 договору</a></span></label>
                 </div>
-            </div>
-            <button type="submit" class="btn">Відправити</button>
+                <button type="submit" class="btn">Відправити</button>
+            </form>
+            
         </div>
     </div>
     <script src="./js/modal.js"></script>
