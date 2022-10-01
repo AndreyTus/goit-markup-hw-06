@@ -996,6 +996,7 @@ a {
 
 .accept-a {
     color: var(--btn-color);
+    text-decoration: underline;
 }
 
 .box-icon {
@@ -1015,3 +1016,66 @@ a {
     outline: var(--btn-color);
     border-radius: 2px;
 }
+
+.foot-mail {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-size {
+    width: 358px;
+    height: 50px;
+    outline: none;
+    background-color: var(--footer-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #EEEEEE;
+    padding: 15px 16px;
+}
+
+.footer-input {
+    display: flex;
+    margin-left: 93px;
+    align-items: flex-end;
+}
+
+.footer-input .btn {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--btn-active-color);
+    padding-left: 28px;
+    transform: rotate(0);
+    transition: transform(360deg) 250ms var(--timing-function);
+}
+
+.submit-icon {
+    margin-left: 10px;
+}
+
+.email-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-input .btn svg {
+    transform: rotate(0);
+    transition: transform 250ms var(--timing-function);
+}
+
+.footer-input .btn:focus svg {
+    transform: rotate(360deg);
+}
+
